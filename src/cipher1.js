@@ -1,11 +1,10 @@
-document.getElementById("start").addEventListener("click", ()=>{
+document.getElementById("start1").addEventListener("click", ()=>{
   location.href = "index.html"
 })
 
-document.getElementById("exit").addEventListener("click", ()=>{
+document.getElementById("exit1").addEventListener("click", ()=>{
   location.href = "exit.html"
 })
-
 
 let txtCipher = document.getElementById("txt-cipher")
 
