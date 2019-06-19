@@ -1,5 +1,6 @@
 window.cipher = {
  encode : (offset,string) => {
+   offset = parseInt(offset)
    let result = '';
    string = string.toUpperCase();
    for (let i = 0; i<string.length;i++){
@@ -8,10 +9,11 @@ window.cipher = {
     const letter = String.fromCharCode(formula)
     result = result + letter
    }
-   return result
+   return result;
  },
  decode: (offset2,string2) => {
   let result2 = '';
+  offset2 = parseInt(offset2)
   string2 = string2.toUpperCase();
   for (let i = 0; i<string2.length;i++){
    const ascii = string2[i].charCodeAt();
@@ -19,6 +21,6 @@ window.cipher = {
    const letter = String.fromCharCode(formula)
    result2 = result2 + letter
   }
-  return result2
+  return result2;
  }
 };

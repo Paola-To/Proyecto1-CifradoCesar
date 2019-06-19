@@ -17,6 +17,6 @@ let messageDecipher = document.getElementById ("message-decipher")
 decipherButton.addEventListener("click", ()=>{
  let string2 = txtDecipher.value.toUpperCase()
  let offset2 = offsetDecipher.value
- let descifrado = window.cipher.encode(offset2,string2)
+ let descifrado = window.cipher.decode(offset2,string2)
  messageDecipher.value = descifrado
 })
