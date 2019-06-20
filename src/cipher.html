@@ -1,30 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1">
-    <title>Mapa del Tesoro</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tu layout se mostrará correctamente a una escala de 1:1 Ningún zoom será aplicado-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />  <!-- rel="stylesheet" Indica que se une una hoja de estilo; type="text/css" indica que es un archivo de texto en sintaxis CSS; href="style.css" nombre del archivo a enlazar.-->
+    <title>Isla Mágica</title>
   </head>
   <body>
-    <section id="cipherPage">
-      <h1>Cifrar</h1>
+    <section id="cipherp">
+      <h1>ESCONDE</h1>
+      <br>
+      <p>Escribe la PALABRA MÁGICA<br>para guardar tu tesoro.</p>
       <br>
       <input id="txt-cipher" type="text"/>
-      <p> Agrega el número de corrimiento del codigo</p>
-      <input id="offset-cipher" type="text"/>
-      <div>
+      <br>
+      <p>Para que nadie encuentre tu tesoro<br>ponle un candado a tu cofre.</p>
+      <input id="offset-cipher" type="text" placeholder="Escribe un número"/>
       <br>
       <br>
-        <button type="button" id="cipher-button">Cifrar</button>
-        <input id="message-cipher" type="text"/>
-        <br>
-        <br>
-        <button type="button" id="start1">Regresar</button>
-        <button type="button" id="exit1">Salir</button>
-        <br>
-      </div>
-   </section>
+      <button type="button" id="cipher-button">CLAVE</button>
+      <br>
+      <p>LA CLAVE QUE ABRIRÁ<br>TU COFRE ES:</p>
+      <input id="message-cipher" type="text"/>
+      <br>
+      <br>
+      <button type="button" id="start1">Regresar</button>
+      <button type="button" id="exit1">Salir</button>
+      <br>
+        <footer>
+            <p>(c) 2019 By Paola Betancourt</p>
+        </footer>
+    </section>
    <script src="cipher1.js"></script>
    <script src="cipher.js"></script>
   </body>

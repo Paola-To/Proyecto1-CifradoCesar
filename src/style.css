@@ -1,0 +1,25 @@
+/* En html se debe asignar la clase de las secciones */
+
+body{
+    margin: 0;   /* NUEVO */
+  }
+
+#indexp, #cipherp, #decipherp, #exitp{
+    background-image: url('./img/fondo-isla-h.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    background-color: #F2EBD5;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    padding:25px;
+  }
+
+  footer {
+    min-height: 20px;
+    background-color:none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  
